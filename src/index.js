@@ -5,4 +5,14 @@ import List from "./containers/List";
 
 import "bootswatch/dist/lux/bootstrap.min.css";
 
-ReactDom.render(<List />, document.getElementById("root"));
+const App = () => {
+  return (
+    <main className="bg-dark">
+      <div className="container">
+        <List />
+      </div>
+    </main>
+  );
+};
+
+ReactDom.render(<App />, document.getElementById("root"));
